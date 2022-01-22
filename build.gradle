@@ -9,6 +9,10 @@ test {
     finalizedBy jacocoTestReport 
 }
 
+plugins {
+    id 'jacoco'
+}
+
 jacocoTestReport {
     dependsOn test 
     reports {
